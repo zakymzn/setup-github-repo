@@ -1,0 +1,18 @@
+#!/bin/bash
+
+echo -e "Your GitHub username:"
+read username
+
+echo -e "\nRepository name:"
+read repo
+
+echo -e "\nCommit message:"
+read commit
+
+git init
+git add .
+git commit -m "$commit"
+git branch -M main
+git remote add origin https://github.com/$username/$repo.git
+git push -u origin main
+
