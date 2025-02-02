@@ -1,9 +1,9 @@
 # setup-github-repo
 
 ## Language
-[Pendahuluan](#pendahuluan)
+[Indonesia](#pendahuluan)
 
-[Introduction](#introduction)
+[English](#introduction)
 
 ## Pendahuluan
 Sebuah Linux Bash Script yang memudahkan Anda untuk mempersiapkan repository GitHub. Script ini dibuat atas dasar rasa malas setiap saya mempersiapkan repositori GitHub untuk setiap project yang saya buat. Jadi saya membuat script ini agar saya bisa menghemat waktu 😁.
