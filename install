@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo cp setup_github_repo /usr/bin/
