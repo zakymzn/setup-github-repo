@@ -19,7 +19,7 @@ Anda juga bisa menggunakan [GitHub CLI](https://github.com/cli/cli) untuk membua
 
 Setelah membuat repositori GitHub, pastikan Anda sedang berada di direktori project yang ingin Anda kerjakan, kemudian jalankan perintah.
 
-`setup_github_repo`
+`setgh`
 
 Anda akan diminta untuk memasukkan username GitHub Anda.
 
@@ -47,7 +47,7 @@ You can also use [GitHub CLI](https://github.com/cli/cli) to create a GitHub rep
 
 After creating the GitHub repository, make sure you are in the directory of the project you want to work on, then run the command.
 
-`setup_github_repo`
+`setgh`
 
 You will be prompted to enter your GitHub username.
 
