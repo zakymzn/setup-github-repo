@@ -1,37 +1,36 @@
 #!/bin/bash
 
-echo -e "Your GitHub username:"
+echo -n "Your GitHub username: "
 read username
 
-echo -e "\nRepository name:"
+echo -n "Repository name: "
 read repo
 
-echo -e "\nCommit message:"
+echo -n "Commit message: "
 read commit
 
-while true
-do
-	echo -e "\nDid you previously create a .gitignore, README.md, or license file? [y/n]"
-	read created
-	
-	if [ $created == "y" ] || [ $created == "Y" ]; then
-		git init
-		git branch -M main
-		git remote add origin https://github.com/$username/$repo.git
-		git pull origin main
-		git add .
-		git commit -m "$commit"
-		git push -u origin main
-		break
-	elif [ $created == "n" ] || [ $created == "N" ]; then
-		git init
-		git add .
-		git commit -m "$commit"
-		git branch -M main
-		git remote add origin https://github.com/$username/$repo.git
-		git push -u origin main
-		break
-	else
-		echo -e "\nPlease answer with y/n"
-	fi
+while true; do
+  echo -n "Did you previously create a .gitignore, README.md, or license file? [y/n] "
+  read created
+
+  if [ $created == "y" ] || [ $created == "Y" ]; then
+    git init
+    git branch -M main
+    git remote add origin https://github.com/$username/$repo.git
+    git pull origin main
+    git add .
+    git commit -m "$commit"
+    git push -u origin main
+    break
+  elif [ $created == "n" ] || [ $created == "N" ]; then
+    git init
+    git add .
+    git commit -m "$commit"
+    git branch -M main
+    git remote add origin https://github.com/$username/$repo.git
+    git push -u origin main
+    break
+  else
+    echo -e "Please answer with y/n"
+  fi
 done
